@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/vector-gratis/borde-negocios-rojo-vector-diseno-fondo-moderno_53876-157563.jpg?t=st=1732680761~exp=1732684361~hmac=cb3c0b5cfde44cc562e390a9e018fcee83a692ea38ec2f30ee695cb735158afe&w=1060");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Input and Button Styles */
+input[type="file"],
+input[type="text"],
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Video List Styles */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los elementos */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px; /* Ancho máximo de la lista */
+}
+
+/* Estilos para cada video individual */
+.video-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 300px; /* Ancho fijo para uniformidad */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover */
+.video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Video Styles */
+.video-item video {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    input[type="file"],
+    input[type="text"],
+    button {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-item {
+        width: calc(50% - 20px); /* Ajustar para pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    input[type="file"],
+    input[type="text"],
+    button {
+        width: 50%;
+    }
+
+    .video-item {
+        width: calc(33.33% - 20px); /* Ajustar para pantallas grandes */
+    }
+}

@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffcccb; /* Light red background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#form1 {
+  background: rgb(243, 122, 122);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Increased width */
+  text-align: center;
+  color: black; /* Black text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#txtBienvenida {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.txt {
+  color: black;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.entry {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+#texto {
+  color: #cc0000; /* Darker red for error messages */
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+#btnEnviar, button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #048b0b; /* Red background for buttons */
+}
+
+#btnEnviar {
+  margin-bottom: 10px;
+}
+
+#btnEnviar:hover, button:hover {
+  background-color: #c90122; /* Lighter red on hover */
+}
+
+button {
+}
+
+@media (max-width: 400px) {
+  #form1 {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
