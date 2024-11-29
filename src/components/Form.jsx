@@ -26,7 +26,8 @@ function Form({ callback, setiduser }) {
         try {
             /*const res = await fetch('http://localhost:4000/v1/signos/login',{*/
 
-                const res = await fetch('https://https://youfree-back.vercel.app/v1/signos/login',{
+            const res = await fetch('https://youfree-back.vercel.app/v1/signos/login', {
+
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
