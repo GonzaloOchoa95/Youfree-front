@@ -1,103 +1,103 @@
 #dirRegistro {
     max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f8f9fa; /* Color de fondo claro */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    font-family: Arial, sans-serif; /* Fuente consistente */
+    margin: 30px auto; /* Reduce el margen superior e inferior */
+    padding: 15px; /* Reduce el relleno interno */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
 #dirRegistro h3 {
     text-align: center;
-    color: #212121; /* Texto en un gris oscuro */
-    margin-bottom: 20px;
-    font-size: 1.5rem; /* Tamaño de fuente adecuado */
+    color: #212121;
+    margin-bottom: 15px; /* Reduce el espacio inferior del título */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaciado consistente entre los elementos */
+    gap: 10px; /* Reduce el espacio entre los elementos */
 }
 
 label {
     font-weight: bold;
-    color: #424242; /* Texto en gris medio */
-    font-size: 1rem;
+    color: #424242;
+    font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
 }
 
 input[type="text"], 
 input[type="password"], 
 select {
-    padding: 12px;
-    border: 1px solid #bdbdbd; /* Borde gris claro */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    font-size: 1rem;
-    background-color: #ffffff; /* Fondo blanco */
-    color: #424242; /* Texto oscuro */
-    transition: border 0.3s ease-in-out; /* Efecto de transición en el borde */
+    padding: 10px; /* Reduce el relleno interno */
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+    background-color: #ffffff;
+    color: #424242;
+    transition: border 0.3s ease-in-out;
 }
 
 input[type="text"]:focus, 
 input[type="password"]:focus, 
 select:focus {
-    border-color: #00796b; /* Borde cambia a un verde oscuro al enfocar */
-    outline: none; /* Eliminar contorno predeterminado */
+    border-color: #00796b;
+    outline: none;
 }
 
 select {
-    appearance: none; /* Elimina el diseño nativo del navegador */
+    appearance: none;
     background-color: #ffffff;
 }
 
 #agregar {
-    padding: 12px;
-    background-color: #00796b; /* Verde oscuro */
-    color: #ffffff; /* Texto blanco */
+    padding: 10px; /* Reduce el relleno interno del botón */
+    background-color: #00796b;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 #agregar:hover {
-    background-color: #004d40; /* Verde más oscuro al pasar el mouse */
+    background-color: #004d40;
 }
 
 button {
-    padding: 12px;
-    background-color: #8e24aa; /* Morado llamativo */
+    padding: 10px; /* Reduce el relleno interno del botón */
+    background-color: #8e24aa;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #6a1b9a; /* Morado más oscuro */
+    background-color: #6a1b9a;
 }
 
 #texto {
-    text-align: center; /* Centra el contenido dentro del contenedor */
-    color: #212121; /* Gris oscuro */
-    font-size: 0.9rem;
-    margin-top: 10px;
+    text-align: center;
+    color: #212121;
+    font-size: 0.8rem; /* Reduce ligeramente el tamaño del texto */
+    margin-top: 8px; /* Reduce el margen superior */
 }
 
 /* Responsive */
 @media (max-width: 500px) {
     #dirRegistro {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        padding: 15px;
+        width: 90%; 
+        padding: 10px; /* Reduce aún más el relleno interno */
     }
     button, #agregar {
-        font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+        font-size: 0.85rem; /* Reduce ligeramente el tamaño del texto */
     }
     input[type="text"], input[type="password"], select {
-        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+        font-size: 0.85rem; /* Ajusta el tamaño del texto */
     }
 }
