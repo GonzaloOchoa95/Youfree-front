@@ -2,80 +2,102 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f0f4f7;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    font-family: Arial, sans-serif; /* Fuente consistente */
 }
 
 #dirRegistro h3 {
     text-align: center;
-    color: #333;
+    color: #212121; /* Texto en un gris oscuro */
     margin-bottom: 20px;
-    font-family: Arial, sans-serif;
+    font-size: 1.5rem; /* Tamaño de fuente adecuado */
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Espaciado consistente entre los elementos */
 }
 
 label {
-    margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
-    font-family: Arial, sans-serif;
+    color: #424242; /* Texto en gris medio */
+    font-size: 1rem;
 }
 
-input[type="text"], input[type="password"], select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="text"], 
+input[type="password"], 
+select {
+    padding: 12px;
+    border: 1px solid #bdbdbd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
     font-size: 1rem;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #424242; /* Texto oscuro */
+    transition: border 0.3s ease-in-out; /* Efecto de transición en el borde */
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+select:focus {
+    border-color: #00796b; /* Borde cambia a un verde oscuro al enfocar */
+    outline: none; /* Eliminar contorno predeterminado */
 }
 
 select {
-    background-color: #fff;
+    appearance: none; /* Elimina el diseño nativo del navegador */
+    background-color: #ffffff;
 }
 
 #agregar {
-    padding: 10px;
-    background-color: #00796b;
-    color: white;
+    padding: 12px;
+    background-color: #00796b; /* Verde oscuro */
+    color: #ffffff; /* Texto blanco */
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #agregar:hover {
-    background-color: #004d40;
+    background-color: #004d40; /* Verde más oscuro al pasar el mouse */
 }
 
 button {
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #8e24aa;
-    color: white;
+    padding: 12px;
+    background-color: #8e24aa; /* Morado llamativo */
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #6a1b9a;
+    background-color: #6a1b9a; /* Morado más oscuro */
 }
 
-#texto{
-    margin: 0 auto;
-    display: inline-block; /* Asegura que el enlace sea tratado como un bloque en línea */
-  
+#texto {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    color: #212121; /* Gris oscuro */
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 /* Responsive */
 @media (max-width: 500px) {
     #dirRegistro {
-        width: 90%;
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        padding: 15px;
+    }
+    button, #agregar {
+        font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+    }
+    input[type="text"], input[type="password"], select {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
     }
 }
