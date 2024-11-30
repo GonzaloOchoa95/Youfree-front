@@ -42,7 +42,7 @@ const Registro = ()=>{
         // console.log(textoEditar);
         e.preventDefault();
       
-        fetch(`https://youfree-back.vercel.app//v1/signos/registro`, {
+        fetch(`https://youfree-back.vercel.app/v1/signos/registro`, {
             method: 'POST',
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({...addcredenciales})
